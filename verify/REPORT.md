@@ -1,6 +1,6 @@
 # Verify report
 
-generated 2026-11-24 07:49 UTC
+generated 2026-11-24 07:53 UTC
 
 ## Versions
 
@@ -121,8 +121,8 @@ apple pie
 ### OK kitty: close window `kitty-close-window` (mapped)
 - binding: arch-latest=ok, debian-stable=ok, fedora-latest=ok, ubuntu-22.04=ok, ubuntu-24.04=ok
 
-### CHECK tmux: new window `tmux-new-window` (tested)
-- binding: arch-latest=missing, debian-stable=missing, fedora-latest=missing, ubuntu-22.04=missing, ubuntu-24.04=missing
+### OK tmux: new window `tmux-new-window` (tested)
+- binding: arch-latest=ok, debian-stable=ok, fedora-latest=ok, ubuntu-22.04=ok, ubuntu-24.04=ok
 - output same on all 5 distros
 
 on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
@@ -131,7 +131,7 @@ on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
 ```
 
 ### CHECK tmux: split left/right `tmux-split-h` (tested)
-- binding: arch-latest=missing, debian-stable=missing, fedora-latest=missing, ubuntu-22.04=missing, ubuntu-24.04=missing
+- binding: arch-latest=missing, debian-stable=missing, fedora-latest=missing, ubuntu-22.04=ok, ubuntu-24.04=missing
 - output same on all 5 distros
 
 on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
@@ -140,8 +140,8 @@ on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
 1:39
 ```
 
-### CHECK tmux: next window `tmux-next-window` (tested)
-- binding: arch-latest=missing, debian-stable=missing, fedora-latest=missing, ubuntu-22.04=missing, ubuntu-24.04=missing
+### OK tmux: next window `tmux-next-window` (tested)
+- binding: arch-latest=ok, debian-stable=ok, fedora-latest=ok, ubuntu-22.04=ok, ubuntu-24.04=ok
 - output same on all 5 distros
 
 on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
@@ -149,8 +149,8 @@ on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
 1
 ```
 
-### CHECK tmux: detach `tmux-detach` (mapped)
-- binding: arch-latest=missing, debian-stable=missing, fedora-latest=missing, ubuntu-22.04=missing, ubuntu-24.04=missing
+### OK tmux: detach `tmux-detach` (mapped)
+- binding: arch-latest=ok, debian-stable=ok, fedora-latest=ok, ubuntu-22.04=ok, ubuntu-24.04=ok
 
 ### OK tmux capture-pane -p `tmux-capture-pane` (tested)
 - output same on all 5 distros

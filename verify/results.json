@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24 07:49 UTC",
+ "generated": "2026-11-24 07:53 UTC",
  "distros": [
   "arch-latest",
   "debian-stable",
@@ -396,270 +396,270 @@
    "arch-latest": {
     "out": "Banana",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "Banana",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "Banana",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "Banana",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "Banana",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-n": {
    "arch-latest": {
     "out": "1:apple\n4:apple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "1:apple\n4:apple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "1:apple\n4:apple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "1:apple\n4:apple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "1:apple\n4:apple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-v": {
    "arch-latest": {
     "out": "Banana\ncherry\napp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "Banana\ncherry\napp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "Banana\ncherry\napp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "Banana\ncherry\napp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "Banana\ncherry\napp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-c": {
    "arch-latest": {
     "out": "2",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "2",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "2",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "2",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "2",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-w": {
    "arch-latest": {
     "out": "app",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "app",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "app",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "app",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "app",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-E": {
    "arch-latest": {
     "out": "Banana\ncherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "Banana\ncherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "Banana\ncherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "Banana\ncherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "Banana\ncherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-o": {
    "arch-latest": {
     "out": "pp\npp\npp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "pp\npp\npp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "pp\npp\npp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "pp\npp\npp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "pp\npp\npp",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-r": {
    "arch-latest": {
     "out": "d/a.txt:cherry\nd/b.txt:cherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "d/a.txt:cherry\nd/b.txt:cherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "d/a.txt:cherry\nd/b.txt:cherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "d/a.txt:cherry\nd/b.txt:cherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "d/a.txt:cherry\nd/b.txt:cherry",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-l": {
    "arch-latest": {
     "out": "d/a.txt\nd/b.txt",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "d/a.txt\nd/b.txt",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "d/a.txt\nd/b.txt",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "d/a.txt\nd/b.txt",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "d/a.txt\nd/b.txt",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "grep-A": {
    "arch-latest": {
     "out": "cherry\napple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "cherry\napple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "cherry\napple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "cherry\napple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "cherry\napple pie",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   },
   "kitty-new-window": {
@@ -751,63 +751,63 @@
    "arch-latest": {
     "out": "2",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "debian-stable": {
     "out": "2",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "fedora-latest": {
     "out": "2",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "ubuntu-22.04": {
     "out": "2",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "ubuntu-24.04": {
     "out": "2",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    }
   },
   "tmux-split-h": {
    "arch-latest": {
     "out": "0:40\n1:39",
     "rc": 0,
-    "status": "recorded",
+    "status": "pass",
     "bind": "missing"
    },
    "debian-stable": {
     "out": "0:40\n1:39",
     "rc": 0,
-    "status": "recorded",
+    "status": "pass",
     "bind": "missing"
    },
    "fedora-latest": {
     "out": "0:40\n1:39",
     "rc": 0,
-    "status": "recorded",
+    "status": "pass",
     "bind": "missing"
    },
    "ubuntu-22.04": {
     "out": "0:40\n1:39",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "ubuntu-24.04": {
     "out": "0:40\n1:39",
     "rc": 0,
-    "status": "recorded",
+    "status": "pass",
     "bind": "missing"
    }
   },
@@ -815,76 +815,76 @@
    "arch-latest": {
     "out": "1",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "debian-stable": {
     "out": "1",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "fedora-latest": {
     "out": "1",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "ubuntu-22.04": {
     "out": "1",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    },
    "ubuntu-24.04": {
     "out": "1",
     "rc": 0,
-    "status": "recorded",
-    "bind": "missing"
+    "status": "pass",
+    "bind": "ok"
    }
   },
   "tmux-detach": {
    "arch-latest": {
-    "bind": "missing"
+    "bind": "ok"
    },
    "debian-stable": {
-    "bind": "missing"
+    "bind": "ok"
    },
    "fedora-latest": {
-    "bind": "missing"
+    "bind": "ok"
    },
    "ubuntu-22.04": {
-    "bind": "missing"
+    "bind": "ok"
    },
    "ubuntu-24.04": {
-    "bind": "missing"
+    "bind": "ok"
    }
   },
   "tmux-capture-pane": {
    "arch-latest": {
     "out": "1",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "debian-stable": {
     "out": "1",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "fedora-latest": {
     "out": "1",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-22.04": {
     "out": "1",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    },
    "ubuntu-24.04": {
     "out": "1",
     "rc": 0,
-    "status": "recorded"
+    "status": "pass"
    }
   }
  }
