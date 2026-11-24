@@ -20,7 +20,7 @@ def flags(text):
 def bind_tmux(b):
     d = tempfile.mkdtemp()
     env = dict(BASE, HOME=d, TMUX_TMPDIR=d)
-    out, _ = sh("tmux new-session -d -s k && tmux list-keys; tmux kill-server", d, env)
+    out, _ = sh("tmux new-session -d -s k && tmux list-keys; tmux kill-server", d, env, 10**6)
     pat = r"-T\s+prefix\s+" + re.escape(b["key"]) + r"\s+" + re.escape(b["action"])
     return "ok" if re.search(pat, out) else "missing"
 
