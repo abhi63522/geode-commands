@@ -40,6 +40,10 @@ for i, (tool, e) in meta.items():
     L += ["", "### %s %s `%s` (%s)" % ("OK" if ok else "CHECK", e["cmd"], i, e["level"])]
     if e.get("bind"):
         L.append("- binding: " + ", ".join("%s=%s" % (n, rs[n].get("bind", "?")) for n in names))
+        if any(rs[n].get("bind") != "ok" for n in names):
+            for n in names:
+                if rs[n].get("bind_seen"):
+                    L.append("  - %s saw: %s" % (n, " / ".join(rs[n]["bind_seen"])))
     if e.get("run"):
         g = {}
         for n in names:

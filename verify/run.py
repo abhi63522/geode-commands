@@ -21,8 +21,11 @@ def bind_tmux(b):
     d = tempfile.mkdtemp()
     env = dict(BASE, HOME=d, TMUX_TMPDIR=d)
     out, _ = sh("tmux new-session -d -s k && tmux list-keys; tmux kill-server", d, env, 10**6)
-    pat = r"-T\s+prefix\s+" + re.escape(b["key"]) + r"\s+" + re.escape(b["action"])
-    return "ok" if re.search(pat, out) else "missing"
+    pat = r"-T\s+prefix\s+\\?" + re.escape(b["key"]) + r"\s+" + re.escape(b["action"])
+    word = b["action"].split()[0]
+    seen = [re.sub(r"\s+", " ", l) for l in out.splitlines()
+            if re.search(r"-T\s+prefix\s", l) and word in l][:4]
+    return ("ok" if re.search(pat, out) else "missing"), seen
 
 
 _ks = []
@@ -76,7 +79,10 @@ for f in sorted(glob.glob("entries/*.json")):
             r["status"] = ("pass" if out == e["expect"] else "FAIL") if "expect" in e else "recorded"
         b = e.get("bind")
         if b:
-            r["bind"] = bind_tmux(b) if b["app"] == "tmux" else bind_kitty(b)
+            if b["app"] == "tmux":
+                r["bind"], r["bind_seen"] = bind_tmux(b)
+            else:
+                r["bind"] = bind_kitty(b)
         result["entries"][e["id"]] = r
 
 os.makedirs("out", exist_ok=True)
