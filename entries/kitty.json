@@ -1,0 +1,7 @@
+{"tool":"kitty","version_cmd":"kitty --version","entries":[
+{"id":"kitty-new-window","cmd":"kitty: new window","keys":"Ctrl+Shift+Enter","what":"opens a new split inside the current tab","bind":{"app":"kitty","action":"new_window","keys":["kitty_mod+enter","ctrl+shift+enter"]},"args":[],"example":"press Ctrl+Shift+Enter","level":"mapped"},
+{"id":"kitty-new-tab","cmd":"kitty: new tab","keys":"Ctrl+Shift+T","what":"opens a new tab","bind":{"app":"kitty","action":"new_tab","keys":["kitty_mod+t","ctrl+shift+t"]},"args":[],"example":"press Ctrl+Shift+T","level":"mapped"},
+{"id":"kitty-next-tab","cmd":"kitty: next tab","keys":"Ctrl+Shift+Right (or Ctrl+Tab)","what":"switches to the next tab","bind":{"app":"kitty","action":"next_tab","keys":["kitty_mod+right","ctrl+shift+right","ctrl+tab"]},"args":[],"example":"press Ctrl+Shift+Right","level":"mapped"},
+{"id":"kitty-next-window","cmd":"kitty: next window","keys":"Ctrl+Shift+]","what":"moves focus to the next split","bind":{"app":"kitty","action":"next_window","keys":["kitty_mod+]","ctrl+shift+]"]},"args":[],"example":"press Ctrl+Shift+]","level":"mapped"},
+{"id":"kitty-close-window","cmd":"kitty: close window","keys":"Ctrl+Shift+W","what":"closes the current split","bind":{"app":"kitty","action":"close_window","keys":["kitty_mod+w","ctrl+shift+w"]},"args":[],"example":"press Ctrl+Shift+W","level":"mapped"}
+]}
