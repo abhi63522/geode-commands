@@ -1,0 +1,47 @@
+name: verify
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['verify/results.json', 'verify/REPORT.md']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: verify
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: ubuntu-22.04, image: "ubuntu:22.04"}
+          - {name: ubuntu-24.04, image: "ubuntu:24.04"}
+          - {name: debian-stable, image: "debian:stable"}
+          - {name: fedora-latest, image: "fedora:latest"}
+          - {name: arch-latest, image: "archlinux:latest"}
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p out && docker run --rm -e NAME=${{ matrix.name }} -v "$PWD":/w -w /w ${{ matrix.image }} sh verify/bootstrap.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: out-${{ matrix.name }}
+          path: out/${{ matrix.name }}.json
+          if-no-files-found: warn
+  report:
+    needs: test
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: out-*
+          path: out
+          merge-multiple: true
+      - run: python3 verify/merge.py
+      - run: |
+          git config user.name "verify-bot"
+          git config user.email "verify-bot@users.noreply.github.com"
+          git add verify/results.json verify/REPORT.md
+          git diff --cached --quiet || (git commit -m "verify results" && git pull --rebase && git push)
