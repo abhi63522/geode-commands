@@ -1,6 +1,6 @@
 # Verify report
 
-generated 2026-11-24 07:53 UTC
+generated 2026-11-24 07:58 UTC
 
 ## Versions
 
@@ -130,8 +130,8 @@ on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
 2
 ```
 
-### CHECK tmux: split left/right `tmux-split-h` (tested)
-- binding: arch-latest=missing, debian-stable=missing, fedora-latest=missing, ubuntu-22.04=ok, ubuntu-24.04=missing
+### OK tmux: split left/right `tmux-split-h` (tested)
+- binding: arch-latest=ok, debian-stable=ok, fedora-latest=ok, ubuntu-22.04=ok, ubuntu-24.04=ok
 - output same on all 5 distros
 
 on arch-latest, debian-stable, fedora-latest, ubuntu-22.04, ubuntu-24.04:
